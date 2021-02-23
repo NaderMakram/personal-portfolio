@@ -1,0 +1,283 @@
+/* fonts */
+.gray {color: #858585;}
+.italic {font-style: italic;}
+h3,h4,h5{
+  font-family: 'brandon-bold';
+  margin: 1.6em auto !important;
+}
+h3{
+  font-size: 1.9rem;
+}
+h4{
+  font-size: 1.5rem;
+}
+h5{
+  font-size: 1.3rem;
+}
+.hgray{ 
+  font-size: 1.4rem;
+  color: #858585;
+}
+.small {font-size: 0.9rem;}
+.bold{font-family: 'brandon-bold';}
+p{
+  line-height: 1.7em;
+  margin: 1.6em auto !important;
+}
+
+img{
+  max-width: 100%;
+}
+.dotted{
+  border-bottom: 5px dotted #85858577;
+}
+.image-contaienr{display: flex;}
+
+.grid{
+  display: grid;
+  gap: 9vw;
+  grid-template-columns: 1fr 1fr;
+}
+.grid3{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 600px){
+  .grid,
+  .grid3{
+    grid-template-columns: 1fr;
+  }
+}
+.wireframes .grid2{
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: 50px 320px;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+.span2{
+  grid-column: span 2;
+}
+@media screen and (max-width:854px){
+  .span2 {
+  grid-column: span 3;
+  }
+}
+
+.wireframes .grid1{
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 150px;
+  grid-template-rows: 50px 320px;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+.wireframes .grid-fit{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(155px , 1fr));
+  justify-content: center;
+}
+
+.width2{
+  grid-template-columns: 300px !important;
+}
+@media screen and (max-width: 500px){
+  /* .grid1,
+  .grid2,
+  .grid-fit{
+  display: flex !important;
+  flex-direction: column !important;
+  } */
+
+  .grid-fit{
+    grid-template-columns: 200px !important;
+  }
+  .grid-fit > * {
+    grid-column: span 1 / -1;
+  }
+
+
+  .grid1{
+    margin: 0 !important;
+  }
+  .gray-button{
+    padding: 1em !important;
+  }
+}
+.grid-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*  */
+.header-image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.header-image img{
+  grid-column: 1/ -1;
+  grid-row: 1 /-1;
+}
+
+.header-image .header-text{
+  grid-column: 1/ 2;
+  grid-row: 1 / -1;
+  align-self: center;
+  padding: 4%;
+}
+
+.header-image h5{
+  display: inline;
+  /* background: white; */
+  /* color: #ade8e4; */
+  line-height: 1.7em;
+  padding: 0 0.5em;
+}
+.header-image h3{
+  margin-bottom: 1.5em;
+}
+@media screen and (max-width: 610px){
+  .header-image .header-text{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    padding: 0;
+  }
+.header-image h5{
+  padding: 0;
+  margin: 0;
+  background: rgb(201, 201, 201,0.1);
+  font-size: 1.1rem;
+}
+  .header-image h3{
+    margin: 0 !important;
+    margin-bottom: 0.5em;
+  }
+}
+
+
+.ul,
+.ul li {
+  margin: 2em auto;
+}
+
+
+
+.finding{
+  margin-bottom: 1em;
+}
+.finding * {
+  padding: 0.1em 0;
+  margin: 0 !important;
+}
+
+
+
+
+.push-button{
+  width: 11em;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 2em auto;
+  display: block;
+  border: 5px solid var(--main-color);
+  color: black;
+  background: white;
+  padding: 1em;
+  border-radius: 8px;
+  font-family: 'brandon-bold';
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.push-button:hover{
+  transform: translate(8px ,8px);
+  box-shadow: none;
+  color: white;
+  background: var(--main-color);
+}
+
+.push-button,
+.gray-button{
+  box-shadow: 
+  1px 1px #858585,
+  2px 2px #858585,
+  3px 3px #858585,
+  4px 4px #858585,
+  5px 5px #858585,
+  6px 6px #858585,
+  7px 7px #858585,
+  8px 8px #858585
+  ;
+}
+
+
+.gray-button{
+  display: block;
+  font-size: 0.7rem;
+  outline: none;
+  background: white;
+  border: 1px solid rgb(5, 24, 94); 
+  border-radius:7px;
+  color: gray;
+  padding: 0 1em;
+  margin-bottom: 0.5em;
+}
+
+
+
+/* another project component */
+.another-project{
+  display: grid;
+  justify-items: flex-start;
+}
+.another-project> *{
+  margin: 0.5em !important;
+}
+.another-project img{
+  margin: 0 !important;
+  padding: 0;
+  width: 100%;
+}
+
+
+
+/* go up button */
+.go-up-container{
+  display: flex;
+  justify-content: flex-end;
+}
+.go-up{
+  display: flex;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: 5px solid black;
+  border-radius: 100px;
+  padding: 0.7em;
+}
+
+.go-up svg{
+  transition: all 0.2s;
+
+}
+
+.go-up:hover{
+  background: #05185e;
+  color: white;
+}
+
+.go-up:hover svg{
+  fill: white;
+  transform: scale(1.2);
+}

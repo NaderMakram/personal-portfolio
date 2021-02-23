@@ -1,0 +1,56 @@
+:root{
+  --main-color: #f9848c;
+}
+
+.header-image h5{
+  background: white;
+  color: var(--main-color);
+}
+
+.two-titles{
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone-image{
+  margin-bottom: 1em;
+}
+
+.no-gap{
+  gap: 10px;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.videogrid{
+  align-items: center;
+}
+
+video{
+  width: 100%;
+}
+
+.wireframes .grid-fit{
+  grid-template-columns: repeat(auto-fill, minmax(200px , 1fr));
+
+}
+
+.wireframes .grid1{
+  grid-template-columns: 200px;
+}
+
+.push-button{
+  padding:1em 0;
+}
+
+.qr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr img{
+  width: 120px;
+}

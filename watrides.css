@@ -1,0 +1,17 @@
+:root{
+  --main-color: #fbd867;
+}
+
+.header-image h5{
+  background: white;
+  color: var(--main-color);
+}
+
+.two-titles{
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone-image{
+  margin-bottom: 1em;
+}
