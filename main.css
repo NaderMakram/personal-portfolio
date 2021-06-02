@@ -190,7 +190,20 @@ header .people {
 }
 
 header .user {
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
+  position: relative;
+}
+
+header .user::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  background: #000;
+  bottom: 40%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 
@@ -298,7 +311,7 @@ footer .footer-top .email{
   font-family: 'brandon-bold';
   font-size: 1.4rem;
 }
-footer .footer-top p {
+footer .footer-top div.footer-p {
   margin-bottom: 1em;
 }
 
